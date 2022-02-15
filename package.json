@@ -1,0 +1,19 @@
+{
+    "name": "coffee_shop_app",
+    "description": "",
+    "main": "",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/FlaviusPintican/test_oop"
+    },
+    "private": true,
+    "devDependencies": {
+        "husky": "^4.3.8",
+        "lint-staged": "^12.1.3"
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "lint-staged"
+        }
+    }
+}
