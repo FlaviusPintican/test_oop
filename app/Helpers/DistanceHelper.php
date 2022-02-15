@@ -15,7 +15,7 @@ class DistanceHelper
      * @param float $longitudeTo Longitude of target point in [deg decimal]
      * @param int $earthRadius Mean earth radius in [m]
      *
-     * @return float distance between points in [meters] (same as earthRadius)
+     * @return float distance between points in [kilometers] (same as earthRadius)
      */
     public static function vincentyGreatCircleDistanceInKm(
         float $latitudeFrom,
