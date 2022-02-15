@@ -1,6 +1,6 @@
 {
   "name": "cofee_shop/app",
-  "description": "Weather application",
+  "description": "Coffee application",
   "type": "project",
   "homepage": "https://github.com/FlaviusPintican/test_oop",
   "require": {
