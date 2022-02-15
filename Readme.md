@@ -41,3 +41,24 @@ Starbucks Seattle,0.0861
 Starbucks SF,10.0793
 ```
 
+## Setup your local environment
+* Download the php8 version from https://www.php.net/downloads
+* Enable the minimum extension like ```curl and openssl```
+* Add cacert.pem by opening http://curl.haxx.se/ca/cacert.pem
+* Copy the entire page and save it as a “cacert.pem”
+* Open your php.ini file and insert or update the following line.
+  ```curl.cainfo = "[pathtofile]cacert.pem"```
+* Download your composer from ```https://getcomposer.org/download/```
+* Add you env variables in .env. See .env.example to create your .env file and fill it.
+* Run ```composer install```
+* Create ```storage/log/weather.log``` folder
+
+## Run your application
+* Run ```php coffee_shop.php 47.6 -122.4 coffee_shops.csv``` to see the expected output.
+
+## You can use also google APIs to calculate the distance between 2 points
+* e.g: ```https://cloud.google.com/blog/products/maps-platform/how-calculate-distances-map-maps-javascript-api```
+* I don't implement some unit tests because you don't ask this. Also, any issues of performance are not taking into 
+* consideration because you don't specify how many data you'll have in the Excel file.
+* The solution is without using an external service because is not free to use it and creating an api key needs a paid
+* account.
